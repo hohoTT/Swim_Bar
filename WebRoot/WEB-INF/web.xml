@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<context-param>
+		<description>数据库驱动名</description>
+		<param-name>db_driver_name</param-name>
+		<param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
+	</context-param>
+
+	<context-param>
+		<description>数据库路径</description>
+		<param-name>db_url</param-name>
+		<param-value>jdbc:sqlserver://localhost:1433;DatabaseName=ExcDb</param-value>
+	</context-param>
+
+	<context-param>
+		<description>管理员登陆后最大在线时间为1分钟，过期后自动下线（登出）。</description>
+		<param-name>manager_online_max_interval</param-name>
+		<param-value>600000</param-value>
+	</context-param>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.wt.servlets.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.wt.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>username_check</servlet-name>
+    <servlet-class>com.wt.validate.username_check</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>sessionHandle</servlet-name>
+    <servlet-class>com.wt.sessionTool.sessionHandle</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>shopping</servlet-name>
+    <servlet-class>com.wt.servlets.shopping</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>shoppingServlet</servlet-name>
+    <servlet-class>com.wt.servlets.shoppingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteInfoServlet</servlet-name>
+    <servlet-class>com.wt.servlets.deleteInfoServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/servlet/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>username_check</servlet-name>
+    <url-pattern>/api/username_check</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>sessionHandle</servlet-name>
+    <url-pattern>/servlet/sessionHandle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>shopping</servlet-name>
+    <url-pattern>/servlet/shopping</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>shoppingServlet</servlet-name>
+    <url-pattern>/servlet/shoppingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteInfoServlet</servlet-name>
+    <url-pattern>/servlet/deleteInfoServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
