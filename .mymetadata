@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Swim_Bar"
+  id="myeclipse.1445761059525"
+  context-root="/Swim_Bar"
+  j2ee-spec="5.0"
+  archive="Swim_Bar.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
