@@ -5,3 +5,8 @@
 下载源码，打开MyEclipse，直接import。
 
 此网站建立了三个数据库。
+
+以下是数据库的图解：
+  ![](https://github.com/hohoTT/hello-world/blob/master/images/Swim_Bar_DB.png)
+  
+  ![](https://github.com/hohoTT/hello-world/blob/master/images/Swim_Bar_table.png)
